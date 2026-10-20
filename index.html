@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coletor de Moedas - Atividade 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Coletor de Moedas</h1>
+  <p class="instrucoes">Use as setas para se mover • Pressione <strong>P</strong> para pausar</p>
+
+  <div class="painel-status">
+    <div class="status"><img src="imagens/cronometro.png" alt=""><span>Tempo: <b id="tempo">45</b>s</span></div>
+    <div class="status"><img src="imagens/moeda.png" alt=""><span>Pontos: <b id="pontuacao">0</b></span></div>
+    <div class="status"><img src="imagens/coracao2.png" alt=""><span>Vidas: <b id="valorVida">5</b></span></div>
+    <div class="status"><span>⭐ Nível: <b id="nivel">1</b></span></div>
+  </div>
+
+  <div id="areaJogo" aria-label="Área do jogo">
+    <div id="jogador"><img src="imagens/imã.png" alt="Jogador"></div>
+    <div class="moeda" id="moeda"><img src="imagens/moeda.png" alt="Moeda"></div>
+    <div class="obstaculo" id="obstaculo1"><img src="imagens/espinho.jpg" alt="Espinho"></div>
+    <div class="obstaculo" id="obstaculo2"><img src="imagens/espinho.jpg" alt="Espinho"></div>
+    <div class="obstaculo" id="obstaculo3"><img src="imagens/espinho.jpg" alt="Espinho"></div>
+    <div class="obstaculo" id="obstaculo4"><img src="imagens/espinho.jpg" alt="Espinho"></div>
+    <div class="obstaculo" id="obstaculo5"><img src="imagens/espinho.jpg" alt="Espinho"></div>
+    <div id="mensagemCentral" role="status"></div>
+    <div id="mensagemColisao" role="status"></div>
+  </div>
+  <p class="dica">Colete 10 moedas para vencer. Cuidado com os espinhos!</p>
+  <button id="reiniciar" type="button">Reiniciar jogo</button>
+  <script src="script.js"></script>
+</body>
+</html>

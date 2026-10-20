@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 22px 14px 35px; font-family: Arial, sans-serif; text-align: center; background: #252a34; color: #fff; }
+h1 { margin: 5px 0 8px; }
+.instrucoes, .dica { color: #dce6f1; }
+.painel-status { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 18px auto; max-width: 760px; }
+.status { min-width: 125px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; background: #fff; color: #20242c; border: 2px solid #111; border-radius: 12px; font-size: 17px; }
+.status img { width: 28px; height: 28px; object-fit: contain; }
+#areaJogo { width: min(600px, 95vw); height: min(500px, 78vw); min-height: 330px; border: 3px solid #10151b; margin: 0 auto; position: relative; background: #30535f; overflow: hidden; border-radius: 18px; }
+#jogador { width: 40px; height: 40px; border-radius: 50%; position: absolute; top: 180px; left: 280px; overflow: hidden; border: 2px solid #ff5252; z-index: 2; }
+#jogador img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.moeda { width: 30px; height: 30px; position: absolute; border-radius: 50%; border: 2px solid #cd9826; }
+.moeda img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 50%; }
+.obstaculo { width: 35px; height: 35px; position: absolute; border: 2px solid #101010; border-radius: 7px; overflow: hidden; }
+.obstaculo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+#mensagemCentral { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: max-content; max-width: 90%; background: rgba(0,0,0,.88); color: white; padding: 20px; font-size: clamp(18px, 3vw, 28px); font-weight: bold; border-radius: 15px; border: 3px solid white; display: none; z-index: 10; }
+#mensagemColisao { position: absolute; top: 8px; left: 8px; right: 8px; color: #fff; text-shadow: 1px 1px 3px #000; font-weight: bold; z-index: 5; pointer-events: none; }
+button { margin-top: 8px; padding: 11px 20px; border: 0; border-radius: 9px; background: #f4c542; color: #222; font-weight: bold; font-size: 16px; cursor: pointer; }
+button:hover { background: #ffda68; }
+@media (max-width: 650px) { body { padding: 12px 6px 25px; } .status { min-width: 42%; font-size: 14px; } #areaJogo { height: 75vw; min-height: 300px; } }
